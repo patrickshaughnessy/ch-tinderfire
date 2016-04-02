@@ -23,7 +23,7 @@ angular.module('app', ['ionic'])
   });
 })
 .config(function($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('/tab/find');
+  $urlRouterProvider.otherwise('/tab/profile');
 
   $stateProvider
       .state('tabs', {
@@ -49,14 +49,14 @@ angular.module('app', ['ionic'])
           }
         }
       })
-      .state('tabs.settings', {
-        url: "/settings",
+      .state('tabs.messages', {
+        url: "/messages",
         views: {
-          'settings-tab': {
-            templateUrl: "partials/settings.html",
-            controller: 'SettingsTabCtrl'
+          'messages-tab': {
+            templateUrl: "partials/messages.html",
+            controller: 'MessagesTabCtrl'
           }
         }
-      })
+      });
 
 });

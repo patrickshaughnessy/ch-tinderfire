@@ -3,6 +3,23 @@
     Profile
   </ion-nav-title>
   <ion-content>
-    profile
+    <div class="list card">
+      <div class="item item-text-wrap">
+        <h3>Name: {{user.name}}</h1>
+      </div>
+      <div class="item item-text-wrap">
+        <h3>Age: {{user.age}}</h1>
+      </div>
+      <div class="item item-text-wrap">
+        <h3>Description: {{user.description}}</h1>
+      </div>
+      <div class="item item-image">
+        <img ng-src="{{user.image}}">
+      </div>
+      <button ng-click="takePicture()">
+        Take Picture
+      </button>
+    </div>
+
   </ion-content>
 </ion-view>
