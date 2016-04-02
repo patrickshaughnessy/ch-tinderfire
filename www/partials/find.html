@@ -1,0 +1,28 @@
+<ion-view>
+  <ion-nav-title>
+    Find Someone Special!
+  </ion-nav-title>
+  <ion-content>
+    <div class="card">
+
+      <div class="item item-divider text-center">
+        <h2>Name: {{match.name}}</h2>
+        <p>Age: {{match.age}}</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" ng-src="match.image">
+        <p>
+          description {{match.description}}
+        </p>
+      </div>
+
+      <div class="item item-divider">
+        <div class="button-bar">
+          <a class="button icon-left ion-close-round button-assertive">No thanks</a>
+          <a class="button icon-right ion-heart button-balanced">Oo Like!</a>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

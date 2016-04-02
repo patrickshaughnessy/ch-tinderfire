@@ -1,0 +1,12 @@
+{
+  "name": "tinderfire",
+  "app_id": "aaf643ec",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
